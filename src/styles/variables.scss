@@ -1,0 +1,21 @@
+$pale-grey: #f3f6f8 !default;
+$pale-grey-invert: findColorInvert($pale-grey) !default;
+$bluish-grey: #86939e !default;
+$bluish-grey-invert: findColorInvert($bluish-grey) !default;
+$pale-grey-two: #e1e8ee !default;
+$pale-grey-two-invert: findColorInvert($pale-grey-two) !default;
+$white: #ffffff !default;
+$white-invert: findColorInvert($white) !default;
+$dark-grey: #43484D !default;
+$dark-grey-invert: findColorInvert($dark-grey) !default;
+$apple-green: #81c926 !default;
+$apple-green-invert: findColorInvert($apple-green) !default;
+$highlight-blue: #4990e2 !default;
+$highlight-blue-invert: findColorInvert($highlight-blue) !default;
+$highlight-red: #f61111 !default;
+$highlight-red-invert: findColorInvert($highlight-red) !default;
+$menu-list-highlight-background: rgba(141, 186, 121, .20) !default;
+$menu-list-highlight-background-invert: findColorInvert($menu-list-highlight-background) !default;
+$sidemenu-highlight-background: rgba(73, 144, 226, .20) !default;
+$sidemenu-highlight-background-invert: findColorInvert($sidemenu-highlight-background) !default;
+$custom-colors: ("dark-grey": ($dark-grey, $dark-grey-invert), "pale-grey": ($pale-grey, $pale-grey-invert), "bluish-grey": ($bluish-grey, $bluish-grey-invert), "pale-grey-two": ($pale-grey-two, $pale-grey-two-invert), "white": ($white, $white-invert), "apple-green": ($apple-green, $apple-green-invert), "highlight-blue": ($highlight-blue, $highlight-blue-invert), "highlight-red": ($highlight-red, $highlight-red-invert), "menu-list-highlight-background": ($menu-list-highlight-background, $menu-list-highlight-background-invert), "sidemenu-highlight-background": ( $sidemenu-highlight-background, $sidemenu-highlight-background-invert)) !default

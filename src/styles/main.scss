@@ -1,0 +1,90 @@
+@charset "utf-8";
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/functions';
+@import "@/styles/variables.scss";
+//Baseline Bulma
+@import '~bulma/bulma.sass';
+@import '~buefy/dist/buefy.css';
+// bulma extensions import
+@import '~bulma-extensions/bulma-pageloader/dist/css/bulma-pageloader.sass';
+@import '~bulma-extensions/bulma-steps/dist/css/bulma-steps.sass';
+@import "~bulma-extensions/bulma-tooltip/dist/css/bulma-tooltip.sass";
+.load-spot {
+    position: absolute;
+    left: 50px;
+    height: calc(100vh);
+    width: calc(100vw - 50px);
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    background: rgb(38, 120, 255);
+    background-image: radial-gradient(circle, rgba(38, 120, 255, 1) 0%, rgba(0, 68, 180, 0.5998774509803921)), url("~@/assets/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+a.pagination-link.is-current {
+    background-color: #167df0;
+    border-color: #167df0;
+    color: white;
+}
+
+.datepicker .datepicker-table .datepicker-body .datepicker-cell.is-selected {
+    background-color: #167df0 !important;
+    border-color: #167df0 !important;
+    color: white;
+}
+
+.datepicker .datepicker-table .datepicker-body .datepicker-cell.is-today {
+    border: solid 1px #167df0 !important;
+}
+
+.multiselect__option--highlight,
+.multiselect__tag {
+    background-color: #167df0 !important;
+}
+
+//IE 11 Fixes, do not remove
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    li.message {
+        width: 50%;
+    }
+    .columns {
+        flex-basis: 100%;
+    }
+    .launcher img {
+        height: auto;
+    }
+    .columns.is-gapless>.column {
+        padding: 0.75rem !important;
+    }
+    .logo-container img {
+        height: auto;
+        max-height: 1.75rem;
+        max-width: inherit;
+    }
+    .dropdown.is-mobile-modal .dropdown-menu {
+        width: calc(30vw - 40px);
+    }
+    .modal-content,
+    .modal-card,
+    .modal-card-body {
+        margin: 0 !important;
+        height: 100% !important;
+    }
+}
+
+// CSS specific to iOS devices
+@supports (-webkit-overflow-scrolling: touch) {
+    .modal-card {
+        max-height: calc(80vh - 80px);
+    }
+}
